@@ -2,6 +2,12 @@
   width: 100%;
 }
 
+.home form.logout {
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+}
+
 .home .container {
   width: 100%;
   max-width: 600px;

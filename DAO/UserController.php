@@ -128,8 +128,6 @@
       $sql->bindValue(':limit', $limit);
       $sql->execute();
       
-      echo $sql->rowCount();
-      
       if ( $sql->rowCount() > 0 ) {
         $array = $sql->fetchAll();
 

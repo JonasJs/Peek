@@ -36,6 +36,9 @@
 ?>
 
 <div class="home">
+  <form class="logout" method="POST">
+    <input type="submit" name="logout" value="Sair">
+  </form>
   <div class="container">
     <form method="POST">
       <div class="row">
@@ -50,9 +53,6 @@
     </form>
   </div>
 
-  <form method="POST">
-    <input type="submit" name="logout" value="Sair">
-  </form>
   <?php if(!empty($feed)) : ?>
     <div class="feed">
       <?php foreach($feed as $item): ?>
