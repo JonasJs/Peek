@@ -1,0 +1,100 @@
+.login {
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  .row {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    &.bg {
+      min-height: 100vh;
+      background: linear-gradient(0deg, rgba(21, 101, 216, 0.9), rgba(21, 101, 216, 0.9)), url('../images/bg.jpeg');
+      background-position: right center;
+      background-size: cover;
+
+      color: #fff;
+      @media (max-width: 635px) {
+        display: none;
+      }
+      p {
+        max-width: 473px;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 38px;
+        color: #FFFFFF;
+      }
+      span {
+        width: 100%;
+        max-width: 473px;
+        font-weight: bold;
+        font-size: 96px;
+        color: #7497e4;
+        line-height: 0px;
+        text-align: left;
+
+      }
+    }
+    .content {
+      h1 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+  
+        color: #000000;
+      }
+      p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: #8692A6;
+
+        margin: 10px 0 40px 0;
+      }
+      .error {
+        margin: 0 0 16px 0;
+        font-size: 14px;
+        color: #d81540;
+      }
+      .separator {
+        display: flex;
+        align-items: center;
+
+        text-align: center;
+        font-weight: normal;
+        font-size: 12px;
+        color: #BABABA;
+      }
+      .separator::before, .separator::after {
+        content: '';
+        flex: 1;
+        border: 1px solid #F5F5F5;
+      }
+      .separator::before {
+        margin-right: 10px;
+      }
+      .separator::after {
+        margin-left: 10px;
+      }
+
+      .btnSignin {
+        display: block;
+
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        text-align: center;
+        margin-top: 24px;
+        text-decoration: underline;
+      }
+    }
+  }
+}

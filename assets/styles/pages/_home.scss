@@ -1,0 +1,110 @@
+.home {
+  width: 100%;
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+
+    form {
+      width: 100%;
+      border: 1px solid #8692A6;
+      padding: 20px;
+      border-radius: 10px;
+      .safe {
+        img {
+          width: 25px;
+        }
+      }
+      .input {
+        width: 100%;
+        padding: 0 30px 0 10px;
+      }
+      textarea {
+        width: 100%;
+        background: #FFFFFF;
+        resize: none;
+        box-sizing: border-box;
+        border: 0;
+        border-radius: 6px;
+        padding: 0 8px;
+        
+        margin-bottom: 16px;
+        outline: 0;
+        font-size: 15px;
+        font-family: 'Inter';
+      }
+
+      input {
+        margin: 0 0 0 auto;
+        display: block;
+        padding: 10px 50px;
+        background: #1565D8;
+        border: 0;
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .feed {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid #ebeef0;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    .post {
+      width: 100%;
+      background: #fff;
+      padding: 16px;
+      border-bottom: 1px solid #ebeef0;
+      .row, .user {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      img {
+        width: 55px;
+        border-radius: 44px;
+        background: #ebebeb;
+      }
+      .user {
+        margin-left: 16px;
+        p {
+          font-size: 20px;
+          font-weight: 600;
+          margin-right: 8px;
+          color: #696F79;
+        }
+        span {
+          font-size: 14px;
+          font-weight: 300;
+          color: #BDBDBD;
+        }
+      }
+
+      p.message {
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 8px;
+        color: #464d59;
+      }
+    }
+  }
+}
