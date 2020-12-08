@@ -1,6 +1,6 @@
 <?php
-  require '../config.php';
-  require '../DAO/UserController.php';
+  require './config.php';
+  require './DAO/UserController.php';
 
   $userController = new UserController($pdo);
 
@@ -17,14 +17,14 @@
       
       $_SESSION['kepeD#42'] = $userController->create($newUser, $password);
 
-      header("Location: ../view/home.php");
+      header("Location: ./");
       exit;
     } else {
-      header("Location: ../view/singIn.php");
+      header("Location: singIn.php");
       exit;
     }
   } else {
-    header("Location: ../view/singIn.php");
+    header("Location: singIn.php");
     exit;
   }
 

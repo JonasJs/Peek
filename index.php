@@ -1,7 +1,7 @@
 <?php
   require_once 'template/head.php';
 
-  require '../DAO/PostController.php';
+  require './DAO/PostController.php';
   
   if(isset($_POST["createPost"]) &&  isset($_POST['post_message']) &&!empty($_POST['post_message'])){ 
     

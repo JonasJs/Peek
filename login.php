@@ -1,7 +1,7 @@
 <?php
   require_once 'template/headDisconnected.php';
-  require_once '../config.php';
-  require_once '../DAO/UserController.php';
+  require_once './config.php';
+  require_once './DAO/UserController.php';
 
   $erro;
  
@@ -11,7 +11,7 @@
     
     $userController = new UserController($pdo);
     if($userController->login($email, $password)){
-      header("Location: home.php");
+      header("Location: /");
     } else {
       $erro = "Erro ao Efetuar login!";
     }

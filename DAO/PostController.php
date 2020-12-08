@@ -1,5 +1,5 @@
 <?php
-  require_once('../model/post.php');
+  require_once('./model/post.php');
 
   class PostController implements postDAO {
     private $pdo;

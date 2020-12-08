@@ -12,7 +12,7 @@
       <div class="content">
         <h1>Cria Conta</h1>
         <p>For the purpose of industry regulation, your<br/> details are required.</p>
-        <form method="POST" action="../actions/createUser.php">
+        <form method="POST" action="./actions/createUser.php">
           <div class="item">
             <label>Nome:</label>
             <input type="text" name="name"> 

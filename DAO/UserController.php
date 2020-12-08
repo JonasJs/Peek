@@ -1,5 +1,5 @@
 <?php
-  require_once('../model/user.php');
+  require_once('./model/user.php');
 
   class UserController implements userDAO {
     private $pdo;
