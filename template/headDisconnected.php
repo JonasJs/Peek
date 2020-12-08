@@ -1,4 +1,5 @@
 <?php
+  require './config.php';
   require_once './model/user.php';
   
   $user = new User();
